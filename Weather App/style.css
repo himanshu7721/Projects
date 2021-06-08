@@ -1,0 +1,81 @@
+*{
+margin:0;
+padding:0;
+}
+body
+{
+background-image:url("https://images.unsplash.com/photo-1561915511-0184090c2bdb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEwfHx3ZWF0aGVyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+background-repeat:no-repeat;
+background-size:cover;
+}
+.demo
+{
+ 
+}
+.top
+{
+text-align:center;
+padding:52px 18px 18px;
+}
+.searchBox
+{
+height:30%;
+width:620px;
+outline: none;
+padding:12px 12px;
+color:#001a33;
+border-radius:23px;
+
+background-color:#e0ebeb;
+font-size:21px;
+font-weight:600;
+}
+.searchBox:focus
+{
+background-color:#c2d6d6;
+}
+section
+{
+display: flex;
+flex-direction: column;
+padding: 28px 26px 47px;
+text-align: center;
+}
+.demo1
+{
+text-align:center;
+color:#001a33;
+font-weight:600;
+}
+.demo1 .cityname
+{
+color:#001a33;
+font-size:46px;
+margin-bottom:30px;
+margin-top:18px;
+}
+.demo1 .date
+{
+font-size:24px;
+font-style: oblique;
+}
+.demo1 .temp
+{
+font-size:80px;
+margin-top:23px;
+margin-bottom:23px;
+font-weight:900;
+}
+.demo1 .weather
+{
+color:white;
+font-size:32px;
+font-style: oblique;
+margin-bottom:15px;
+}
+.demo1 .max
+{
+font-style: oblique;
+color:white;
+font-size:28px;
+}
