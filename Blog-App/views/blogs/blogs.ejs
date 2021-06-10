@@ -1,0 +1,32 @@
+<%- include('../partials/head.ejs') %>
+<%- include('../partials/header.ejs', {title : 'Blog App'}) %>
+<div class="container">
+    <div class="grid">
+        <% if(blogs) { %>
+        <% blogs.forEach(blog => { %>
+        <div class="card" style="background-color:#b3cccc"id=<%= blog._id %>>
+            <div class="card-body">
+                <h2 class="card-title" align="center"> <%= blog.title %> </h2>
+                <p class="card-text" align="center"> <%= blog.snippet %> </p>
+            </div>
+            <div class="container pb-3" align="center">
+                <a onclick="displayBlog('<%= blog._id %>')" class="text-success pointer" >Check this blog</a>
+                <p class="text-secondar] ] small" align="center">
+                    <%= new Date(blog.createdAt).toDateString() %> </p>
+            </div>
+        </div>
+        <% }) %>
+        <% } %>
+    </div>
+</div>
+
+<script>
+    function displayBlog(id) {
+        window.location.href = '/blogs/blog/' + id;
+    }
+
+    function print(blog) {
+        console.log(blog);
+    }
+</script>
+<%- include('../partials/tail.ejs') %>

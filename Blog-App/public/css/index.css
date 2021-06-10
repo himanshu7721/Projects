@@ -1,0 +1,75 @@
+.top
+{
+    background-image:url("https://images.unsplash.com/photo-1468421870903-4df1664ac249?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YmxvZ3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    color:#a6ff4d;
+}
+.fun
+{
+    border-radius:19px;
+    margin:9px;
+    background-image: linear-gradient(red, rgb(65, 65, 66));
+}
+.dectext
+{
+    font-size: 50px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2vw;
+}
+.bot {
+    position: relative;
+    bottom: 0px;
+    
+}
+.pointer {
+    cursor: pointer;
+}
+.fix {
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+}
+.area {
+    height: 50vh;
+    resize: none;
+    
+}
+
+.log {
+    position: relative;
+    top: 20vh;
+}
+@media (min-width: 576px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 750px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .form {
+        width: 50%;
+    }
+    .jumtex {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1200px) {}
